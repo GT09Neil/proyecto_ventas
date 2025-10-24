@@ -52,7 +52,7 @@
     <string>Eliminar</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="TablaVentas">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -125,7 +125,7 @@
     <string>id_Venta:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="idVentatxt">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -135,7 +135,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="idClientetxt">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -145,7 +145,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="TipoPagotxt">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -155,7 +155,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="fechaVentatxt">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -165,7 +165,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="TotalVentatxt">
    <property name="geometry">
     <rect>
      <x>20</x>

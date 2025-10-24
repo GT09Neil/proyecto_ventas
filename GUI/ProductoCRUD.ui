@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Frame</string>
   </property>
-  <widget class="QPushButton" name="AgregarButton">
+  <widget class="QPushButton" name="AgregarBTN">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -26,7 +26,7 @@
     <string>Agregar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="ActualizarButton">
+  <widget class="QPushButton" name="ActualizarBTN">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -39,7 +39,7 @@
     <string>Actualizar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="EliminarButton">
+  <widget class="QPushButton" name="EliminarBTN">
    <property name="geometry">
     <rect>
      <x>610</x>
@@ -52,7 +52,7 @@
     <string>Eliminar</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="TableProductos">
    <property name="geometry">
     <rect>
      <x>350</x>

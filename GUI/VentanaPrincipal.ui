@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>479</width>
-    <height>519</height>
+    <width>481</width>
+    <height>509</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -185,7 +185,7 @@
         <x>0</x>
         <y>0</y>
         <width>481</width>
-        <height>571</height>
+        <height>541</height>
        </rect>
       </property>
       <property name="autoFillBackground">
@@ -200,567 +200,533 @@
          <x>0</x>
          <y>0</y>
          <width>479</width>
-         <height>569</height>
+         <height>539</height>
         </rect>
        </property>
-       <widget class="QLabel" name="label">
+       <widget class="QWidget" name="verticalLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>121</width>
-          <height>16</height>
+          <x>0</x>
+          <y>0</y>
+          <width>471</width>
+          <height>131</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Obtener total Ventas:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
+        <layout class="QVBoxLayout" name="LayoutObtenerVentas">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Obtener total Ventas:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <property name="indent">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Permite obtener un reporte de la ventas realizadas durante un mes dado.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="InferiorVentas">
+           <item>
+            <layout class="QVBoxLayout" name="InferiorVIzquierdo">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Mes:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::AutoText</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxMes">
+               <property name="currentText">
+                <string/>
+               </property>
+               <property name="currentIndex">
+                <number>-1</number>
+               </property>
+               <property name="maxVisibleItems">
+                <number>12</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Enero</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Febrero</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Marzo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Abril</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Mayo</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Junio</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Julio</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Agosto</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Septiembre</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Octubre</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Noviembre</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Diciembre</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="inferiorVDerecho">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="TotalVentasBTN">
+               <property name="text">
+                <string>Generar</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
-       <widget class="QLabel" name="label_2">
+       <widget class="QWidget" name="verticalLayoutWidget_3">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>30</y>
-          <width>381</width>
-          <height>16</height>
+          <x>0</x>
+          <y>130</y>
+          <width>471</width>
+          <height>121</height>
          </rect>
         </property>
-        <property name="text">
-         <string>Permite obtener un reporte de la ventas realizadas durante un mes dado.</string>
-        </property>
+        <layout class="QVBoxLayout" name="LayoutReporteClientes">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Reporte clientes:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <property name="indent">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Permite obtener un reporte de los clientes que han comprado a crédito y son morosos, es decir, que están atrasados en sus coutas mensuales.</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ReporteClientesBTN">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Generar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
-       <widget class="QLabel" name="label_3">
+       <widget class="QWidget" name="verticalLayoutWidget_4">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>60</y>
-          <width>121</width>
-          <height>16</height>
+          <x>0</x>
+          <y>250</y>
+          <width>471</width>
+          <height>131</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Mes:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
+        <layout class="QVBoxLayout" name="LayoutInventarioProductos">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Obtener inventario de productos:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <property name="indent">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Permite obtener el inventario de productos por una categoria dada</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="inferiorProductos">
+           <item>
+            <layout class="QVBoxLayout" name="inferiorPIzquierdo">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Categoria:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::AutoText</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxCtg">
+               <property name="currentText">
+                <string/>
+               </property>
+               <property name="currentIndex">
+                <number>-1</number>
+               </property>
+               <property name="maxVisibleItems">
+                <number>12</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Audio</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Video</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Tecnologia</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cocina</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="inferiorPDerecho">
+             <item>
+              <widget class="QPushButton" name="InventarioProductosBTN">
+               <property name="text">
+                <string>Generar</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
-       <widget class="QPushButton" name="TotalVentasBTN">
+       <widget class="QWidget" name="verticalLayoutWidget_6">
         <property name="geometry">
          <rect>
-          <x>340</x>
-          <y>80</y>
-          <width>101</width>
-          <height>31</height>
+          <x>0</x>
+          <y>380</y>
+          <width>471</width>
+          <height>151</height>
          </rect>
         </property>
-        <property name="text">
-         <string>Generar</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBoxMes">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="currentText">
-         <string/>
-        </property>
-        <property name="currentIndex">
-         <number>-1</number>
-        </property>
-        <property name="maxVisibleItems">
-         <number>12</number>
-        </property>
-        <item>
-         <property name="text">
-          <string>Enero</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Febrero</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Marzo</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Abril</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Mayo</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Junio</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Julio</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Agosto</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Septiembre</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Octubre</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Noviembre</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Diciembre</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>121</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Reporte clientes:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>170</y>
-          <width>451</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Permite obtener un reporte de los clientes que han comprado a crédito y son morosos, es decir, que están atrasados en sus coutas mensuales.</string>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="ReporteClientesBTN">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>220</y>
-          <width>101</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Generar</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>280</y>
-          <width>451</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Permite obtener el inventario de productos por una categoria dada</string>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_7">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>260</y>
-          <width>191</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Obtener inventario de productos:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="InventarioProductosBTN">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>340</y>
-          <width>101</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Generar</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBoxCtg">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>340</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="currentText">
-         <string/>
-        </property>
-        <property name="currentIndex">
-         <number>-1</number>
-        </property>
-        <property name="maxVisibleItems">
-         <number>12</number>
-        </property>
-        <item>
-         <property name="text">
-          <string>Audio</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Video</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Tecnologia</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Cocina</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>320</y>
-          <width>121</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Categoria:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_9">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>450</y>
-          <width>121</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Tipo de venta:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_10">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>410</y>
-          <width>451</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Permite obtener un reporte de las ventas realizadas durante cierto periodo dependiendo del tipo de venta que especifique.</string>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox_TVenta">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>470</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="currentText">
-         <string/>
-        </property>
-        <property name="currentIndex">
-         <number>-1</number>
-        </property>
-        <property name="maxVisibleItems">
-         <number>12</number>
-        </property>
-        <item>
-         <property name="text">
-          <string>Contado</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Credito</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QLabel" name="label_11">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>390</y>
-          <width>291</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Obtener ventas realizadas durante un periodo dado:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="VentasPeriodoBTN">
-        <property name="geometry">
-         <rect>
-          <x>340</x>
-          <y>520</y>
-          <width>101</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Generar</string>
-        </property>
-       </widget>
-       <widget class="QDateEdit" name="FechaInicial">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>470</y>
-          <width>121</width>
-          <height>31</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QDateEdit" name="FechaFinal">
-        <property name="geometry">
-         <rect>
-          <x>320</x>
-          <y>470</y>
-          <width>121</width>
-          <height>31</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_12">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>450</y>
-          <width>41</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Inicio:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_13">
-        <property name="geometry">
-         <rect>
-          <x>320</x>
-          <y>450</y>
-          <width>31</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Fin:</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::TextFormat::AutoText</enum>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="margin">
-         <number>0</number>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
+        <layout class="QVBoxLayout" name="LayoutVentasPeriodo">
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Obtener ventas realizadas durante un periodo dado:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <property name="indent">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Permite obtener un reporte de las ventas realizadas durante cierto periodo dependiendo del tipo de venta que especifique.</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="inferioirVentasPeriodo">
+           <item>
+            <layout class="QVBoxLayout" name="InferiorVPIzquierdo">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Tipo de venta:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::AutoText</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_TVenta">
+               <property name="currentText">
+                <string/>
+               </property>
+               <property name="currentIndex">
+                <number>-1</number>
+               </property>
+               <property name="maxVisibleItems">
+                <number>12</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Contado</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Credito</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="InferiorVPCentral">
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Inicio:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::AutoText</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="FechaInicial"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="InferiorVPDerecho">
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Fin:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::AutoText</enum>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+               <property name="margin">
+                <number>0</number>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="FechaFinal"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="VentasPeriodoBTN">
+           <property name="text">
+            <string>Generar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
      </widget>

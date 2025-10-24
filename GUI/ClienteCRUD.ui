@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Frame</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="tablaClientes">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -76,7 +76,7 @@
     <string>Eliminar</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="CedulaClientetxt">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -86,7 +86,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="NombreClientetxt">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -96,7 +96,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="DireccionClientetxt">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -106,7 +106,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="EmailClientetxt">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -188,7 +188,7 @@
     <string>Email:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="AgregarBTN">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -201,7 +201,7 @@
     <string>Agregar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="ActualizarBTN">
    <property name="geometry">
     <rect>
      <x>100</x>
