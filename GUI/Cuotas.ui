@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>665</width>
+    <width>847</width>
     <height>407</height>
    </rect>
   </property>
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
+     <y>50</y>
      <width>301</width>
-     <height>201</height>
+     <height>161</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="infoCredito">
@@ -33,10 +33,10 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="idVenta"/>
+       <widget class="QLineEdit" name="idVentaTXT"/>
       </item>
       <item>
-       <widget class="QPushButton" name="BucarBTN">
+       <widget class="QPushButton" name="BuscarBTN">
         <property name="text">
          <string>Buscar</string>
         </property>
@@ -54,7 +54,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="totalCreditotxt">
+       <widget class="QLineEdit" name="totalCreditoTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -68,7 +68,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="saldoRestantetxt">
+       <widget class="QLineEdit" name="saldoRestanteTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -84,7 +84,7 @@
      <x>10</x>
      <y>210</y>
      <width>301</width>
-     <height>171</height>
+     <height>141</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="infoCliente">
@@ -112,7 +112,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="NombreC">
+       <widget class="QLineEdit" name="NombreCTXT">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -129,7 +129,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="DireccionC">
+       <widget class="QLineEdit" name="DireccionCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -143,7 +143,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLineEdit" name="EmailC">
+       <widget class="QLineEdit" name="EmailCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -157,7 +157,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLineEdit" name="TelefonoC">
+       <widget class="QLineEdit" name="TelefonoCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -167,12 +167,12 @@
     </item>
    </layout>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="tablaCuotas">
    <property name="geometry">
     <rect>
      <x>320</x>
      <y>50</y>
-     <width>331</width>
+     <width>511</width>
      <height>301</height>
     </rect>
    </property>
@@ -205,7 +205,7 @@
   <widget class="QPushButton" name="RegistrarPagoBTN">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>740</x>
      <y>360</y>
      <width>91</width>
      <height>31</height>
@@ -218,10 +218,10 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>30</y>
+     <x>730</x>
+     <y>25</y>
      <width>101</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">

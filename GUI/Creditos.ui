@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
+    <width>766</width>
     <height>425</height>
    </rect>
   </property>
@@ -47,7 +47,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="NombreC">
+       <widget class="QLineEdit" name="NombreCTXT">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -64,7 +64,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="DireccionC">
+       <widget class="QLineEdit" name="DireccionCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -78,7 +78,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLineEdit" name="EmailC">
+       <widget class="QLineEdit" name="EmailCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -92,7 +92,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLineEdit" name="TelefonoC">
+       <widget class="QLineEdit" name="TelefonoCTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -122,10 +122,10 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="idVenta"/>
+       <widget class="QLineEdit" name="idVentaTXT"/>
       </item>
       <item>
-       <widget class="QPushButton" name="BucarBTN">
+       <widget class="QPushButton" name="BuscarBTN">
         <property name="text">
          <string>Buscar</string>
         </property>
@@ -143,7 +143,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="totalVenta">
+       <widget class="QLineEdit" name="totalVentaTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -157,7 +157,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="CuotaInicial">
+       <widget class="QLineEdit" name="CuotaInicialTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -171,7 +171,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLineEdit" name="saldoFinanciar">
+       <widget class="QLineEdit" name="saldoFinanciarTXT">
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -185,7 +185,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QComboBox" name="ComboCuotas">
+       <widget class="QComboBox" name="NumeroCuotasCMB">
         <item>
          <property name="text">
           <string>12</string>
@@ -213,14 +213,14 @@
       <item row="4" column="1">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QLineEdit" name="valorCuota">
+         <widget class="QLineEdit" name="valorCuotaTXT">
           <property name="readOnly">
            <bool>true</bool>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="CalcularC">
+         <widget class="QPushButton" name="CalcularCuotasBTN">
           <property name="text">
            <string>Calcular</string>
           </property>
@@ -237,7 +237,7 @@
     <rect>
      <x>340</x>
      <y>40</y>
-     <width>341</width>
+     <width>411</width>
      <height>311</height>
     </rect>
    </property>
@@ -262,10 +262,10 @@
     </property>
    </column>
   </widget>
-  <widget class="QPushButton" name="RegistrarCBTN">
+  <widget class="QPushButton" name="RegistrarCreditoBTN">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>640</x>
      <y>360</y>
      <width>111</width>
      <height>31</height>
@@ -278,10 +278,10 @@
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>20</y>
+     <x>650</x>
+     <y>10</y>
      <width>101</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">

@@ -36,7 +36,7 @@
      <attribute name="title">
       <string>Entidades</string>
      </attribute>
-     <widget class="QPushButton" name="ClienteButton">
+     <widget class="QPushButton" name="ClienteBTN">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -55,7 +55,7 @@
        <string>Cliente</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="VentaButton">
+     <widget class="QPushButton" name="VentaBTN">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -74,7 +74,7 @@
        <string>Venta</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="ProductoButton">
+     <widget class="QPushButton" name="ProductoBTN">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -93,7 +93,7 @@
        <string>Producto</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="CategoriaButton">
+     <widget class="QPushButton" name="CategoriaBTN">
       <property name="geometry">
        <rect>
         <x>30</x>
@@ -273,7 +273,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBoxMes">
+              <widget class="QComboBox" name="MesCMB">
                <property name="currentText">
                 <string/>
                </property>
@@ -506,7 +506,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBoxCtg">
+              <widget class="QComboBox" name="CategoriaCMB">
                <property name="currentText">
                 <string/>
                </property>
@@ -631,7 +631,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QComboBox" name="comboBox_TVenta">
+              <widget class="QComboBox" name="TipoVentaCMB">
                <property name="currentText">
                 <string/>
                </property>
@@ -789,7 +789,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Getion Usuarios</string>
+       <string>Gestion Usuarios</string>
       </property>
      </widget>
     </widget>

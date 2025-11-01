@@ -33,7 +33,7 @@
     <string>Cedula:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Cedulatxt">
+  <widget class="QLineEdit" name="CedulaTXT">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -63,7 +63,7 @@
     <string>Contraseña:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Contrasenatxt">
+  <widget class="QLineEdit" name="ContrasenaTXT">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -101,10 +101,10 @@
   <widget class="QPushButton" name="AccederBTN">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>220</y>
-     <width>75</width>
-     <height>24</height>
+     <x>150</x>
+     <y>210</y>
+     <width>91</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">

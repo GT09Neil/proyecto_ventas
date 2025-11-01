@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>692</width>
-    <height>373</height>
+    <height>361</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,9 +16,9 @@
   <widget class="QTableWidget" name="tablaClientes">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>260</x>
      <y>40</y>
-     <width>331</width>
+     <width>411</width>
      <height>271</height>
     </rect>
    </property>
@@ -63,12 +63,12 @@
     <string>Lista Clientes</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="EliminarButton">
+  <widget class="QPushButton" name="EliminarBTN">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>330</y>
-     <width>71</width>
+     <x>560</x>
+     <y>320</y>
+     <width>111</width>
      <height>24</height>
     </rect>
    </property>
@@ -76,143 +76,107 @@
     <string>Eliminar</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="CedulaClientetxt">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>90</y>
-     <width>131</width>
-     <height>22</height>
+     <y>40</y>
+     <width>231</width>
+     <height>200</height>
     </rect>
    </property>
+   <layout class="QVBoxLayout" name="DatosCliente">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cedula:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="CedulaTXT"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nombre:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="NombreTXT"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Direccion:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="DireccionTXT"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Email:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="EmailTXT"/>
+    </item>
+   </layout>
   </widget>
-  <widget class="QLineEdit" name="NombreClientetxt">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>90</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="DireccionClientetxt">
+  <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>160</y>
-     <width>131</width>
-     <height>22</height>
+     <y>250</y>
+     <width>231</width>
+     <height>61</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLineEdit" name="EmailClientetxt">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>160</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>70</y>
-     <width>49</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Cedula:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>70</y>
-     <width>51</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Nombre:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>140</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Direccion:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>140</y>
-     <width>49</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Email:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="AgregarBTN">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>260</y>
-     <width>91</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Agregar</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="ActualizarBTN">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>260</y>
-     <width>91</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Actualizar</string>
-   </property>
+   <layout class="QHBoxLayout" name="Botones">
+    <item>
+     <widget class="QPushButton" name="ActualizarBTN">
+      <property name="text">
+       <string>Actualizar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="AgregarBTN">
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

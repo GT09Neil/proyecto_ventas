@@ -6,91 +6,78 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>797</width>
-    <height>392</height>
+    <width>736</width>
+    <height>430</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Frame</string>
   </property>
-  <widget class="QPushButton" name="EliminarBTN">
+  <widget class="QTableWidget" name="TablaUsuarios">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>350</y>
-     <width>111</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Eliminar</string>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="TablaVentas">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>40</y>
-     <width>511</width>
-     <height>301</height>
+     <x>310</x>
+     <y>50</y>
+     <width>411</width>
+     <height>361</height>
     </rect>
    </property>
    <column>
     <property name="text">
-     <string>id_Venta</string>
+     <string>id_usuario</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>id_Cliente</string>
+     <string>Estado</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Tipo_Pago</string>
+     <string>Nombre</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Fecha</string>
+     <string>Email</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Total</string>
+     <string>Tipo_Usuario</string>
     </property>
    </column>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>15</y>
-     <width>91</width>
-     <height>21</height>
+     <x>590</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>11</pointsize>
+     <pointsize>12</pointsize>
      <italic>true</italic>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
-    <string>Lista Ventas</string>
+    <string>Lista de usuarios</string>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>40</y>
-     <width>241</width>
-     <height>251</height>
+     <x>10</x>
+     <y>50</y>
+     <width>291</width>
+     <height>302</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="DatosVenta">
+   <layout class="QVBoxLayout" name="DatosUsuario">
     <item>
      <widget class="QLabel" name="label_2">
       <property name="font">
@@ -100,60 +87,12 @@
        </font>
       </property>
       <property name="text">
-       <string>id_Venta:</string>
+       <string>Id:</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="idVentaTXT"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_6">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>id_Cliente:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="idClienteTXT"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Tipo_Pago:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="TipoPagoTXT"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_5">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Fecha:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="fechaVentaTXT"/>
+     <widget class="QLineEdit" name="idTXT"/>
     </item>
     <item>
      <widget class="QLabel" name="label_3">
@@ -164,22 +103,97 @@
        </font>
       </property>
       <property name="text">
-       <string>Total:</string>
+       <string>Nombre:</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="TotalVentaTXT"/>
+     <widget class="QLineEdit" name="NombreTXT"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Email:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="EmailTXT"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tipo de usuario:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="TipoUsuarioCMB"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Estado:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="EstadoCMB">
+      <item>
+       <property name="text">
+        <string>Activo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suspendido</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Contraseña:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="ContrasenaTXT"/>
     </item>
    </layout>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>300</y>
-     <width>241</width>
-     <height>71</height>
+     <x>10</x>
+     <y>360</y>
+     <width>291</width>
+     <height>51</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="Botones">
