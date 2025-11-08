@@ -1,5 +1,14 @@
 from modelos.cliente import Cliente
 from dao.cliente_dao import ClienteDAO
+from PySide6.QtWidgets import QApplication
+from Controllers.LoginController import LoginController
+import sys
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    login = LoginController()
+    sys.exit(app.exec())
+
 
 # Agregar cliente
 # nuevo = Cliente(nombre="Carlos Pérez", cedula="123456789", direccion="Calle 10 #20", telefono="3214567890", email="carlos@mail.com")

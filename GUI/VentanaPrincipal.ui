@@ -117,7 +117,7 @@
      <attribute name="title">
       <string>Transacciones</string>
      </attribute>
-     <widget class="QPushButton" name="RegitrarVentaBTN">
+     <widget class="QPushButton" name="RegistrarVentaBTN">
       <property name="geometry">
        <rect>
         <x>50</x>
