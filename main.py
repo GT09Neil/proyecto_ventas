@@ -1,30 +1,17 @@
-from modelos.cliente import Cliente
-from dao.cliente_dao import ClienteDAO
 from PySide6.QtWidgets import QApplication
 from Controllers.LoginController import LoginController
 import sys
+from data_initializer import DataInitializer
 
 if __name__ == "__main__":
+    initializer = DataInitializer()
+    initializer.run()
+    if initializer.errores:
+        print("Advertencias durante la carga de datos iniciales:")
+        for mensaje in initializer.errores:
+            print(f" - {mensaje}")
+
     app = QApplication(sys.argv)
     login = LoginController()
     sys.exit(app.exec())
-
-
-# Agregar cliente
-# nuevo = Cliente(nombre="Carlos Pérez", cedula="123456789", direccion="Calle 10 #20", telefono="3214567890", email="carlos@mail.com")
-# ClienteDAO.agregar(nuevo)
-
-# Listar clientes
-# print("📋 Lista de clientes:")
-# for c in ClienteDAO.listar():
-#    print(c)
-
-# Actualizar cliente
-# primero = ClienteDAO.listar()[0]
-# primero.nombre = "Carlos Pérez Editado"
-# ClienteDAO.actualizar(primero)
-
-# Eliminar cliente
-# ClienteDAO.eliminar(0)  # 👈 Descomenta para probar borrado
-
 

@@ -1,13 +1,9 @@
-from db_connection import get_connection
-from modelos.categoria import Categoria
+class Categoria:
+    def __init__(self, id_categoria=None, nombre="", iva=0.0, utilidad=0.0):
+        self.id_categoria = id_categoria
+        self.nombre = nombre
+        self.iva = iva
+        self.utilidad = utilidad
 
-class CategoriaDAO:
-
-    @staticmethod
-    def listar():
-        conn = get_connection()
-        cursor = conn.cursor()
-        cursor.execute("SELECT id_categoria, nombre, iva, utilidad FROM Categoria")
-        rows = cursor.fetchall()
-        conn.close()
-        return [Categoria(*row) for row in rows]
+    def __str__(self):
+        return f"{self.nombre} (IVA {self.iva}%, Utilidad {self.utilidad}%)"

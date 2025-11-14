@@ -288,66 +288,6 @@
                  <property name="maxVisibleItems">
                   <number>12</number>
                  </property>
-                 <item>
-                  <property name="text">
-                   <string>Enero</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Febrero</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Marzo</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Abril</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Mayo</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Junio</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Julio</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Agosto</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Septiembre</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Octubre</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Noviembre</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Diciembre</string>
-                  </property>
-                 </item>
                 </widget>
                </item>
               </layout>
@@ -505,26 +445,6 @@
                  <property name="maxVisibleItems">
                   <number>12</number>
                  </property>
-                 <item>
-                  <property name="text">
-                   <string>Audio</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Video</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Tecnologia</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Cocina</string>
-                  </property>
-                 </item>
                 </widget>
                </item>
               </layout>
@@ -622,16 +542,6 @@
                  <property name="maxVisibleItems">
                   <number>12</number>
                  </property>
-                 <item>
-                  <property name="text">
-                   <string>Contado</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Credito</string>
-                  </property>
-                 </item>
                 </widget>
                </item>
               </layout>
@@ -709,8 +619,263 @@
            </item>
           </layout>
          </item>
+         <item>
+          <layout class="QVBoxLayout" name="LayoutTopClientes">
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="font">
+              <font>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Clientes con mayores compras:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>Muestra los clientes que más han comprado, sumando ventas y unidades adquiridas.</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="TopClientesBTN">
+             <property name="text">
+              <string>Generar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
         </layout>
        </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ConsultasTab">
+     <attribute name="title">
+      <string>Consultas</string>
+     </attribute>
+     <widget class="QScrollArea" name="ConsultasScrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>481</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="consultasScrollAreaWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>479</width>
+         <height>509</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="ConsultasLayout">
+        <item>
+         <layout class="QVBoxLayout" name="LayoutConsultaVentasCliente">
+          <item>
+           <widget class="QLabel" name="label_25">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ventas por cliente</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Consulta todas las ventas asociadas a un cliente específico, incluyendo totales y productos vendidos.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="ConsultaVentasClienteInputs">
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>Cédula:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ConsultaCedulaTXT"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ConsultaVentasClienteBTN">
+              <property name="text">
+               <string>Consultar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="LayoutConsultaProductosBajoStock">
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Productos con stock crítico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Muestra los productos con stock por debajo de su mínimo, indicando la categoría y el valor de venta.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ConsultaProductosBajoStockBTN">
+            <property name="text">
+             <string>Consultar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="LayoutConsultaCreditosActivos">
+          <item>
+           <widget class="QLabel" name="label_30">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Créditos activos con saldo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>Lista los créditos con saldo pendiente, cantidad de cuotas y avance de pago por cliente.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ConsultaCreditosActivosBTN">
+            <property name="text">
+             <string>Consultar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="LayoutConsultaCuotasVencidas">
+          <item>
+           <widget class="QLabel" name="label_32">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Cuotas vencidas</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>Consulta las cuotas vencidas por cliente, con fechas y valores pendientes.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ConsultaCuotasVencidasBTN">
+            <property name="text">
+             <string>Consultar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="LayoutConsultaVentasUsuario">
+          <item>
+           <widget class="QLabel" name="label_34">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ventas por usuario</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>Resumen de ventas registradas por cada usuario del sistema con totales y cantidad de operaciones.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ConsultaVentasUsuarioBTN">
+            <property name="text">
+             <string>Consultar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </widget>
      </widget>
     </widget>
@@ -737,11 +902,30 @@
        <string>Calculadora</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="BitacoraBTN">
+     <widget class="QPushButton" name="CalendarioBTN">
       <property name="geometry">
        <rect>
         <x>70</x>
         <y>130</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calendario</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BitacoraBTN">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>230</y>
         <width>341</width>
         <height>71</height>
        </rect>
@@ -760,7 +944,7 @@
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>240</y>
+        <y>330</y>
         <width>341</width>
         <height>71</height>
        </rect>
@@ -773,6 +957,25 @@
       </property>
       <property name="text">
        <string>Gestion Usuarios</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CerrarSesionBTN">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>430</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cerrar Sesión</string>
       </property>
      </widget>
     </widget>
@@ -931,6 +1134,34 @@
        <string>Universidad del Quindio - 2025</string>
       </property>
      </widget>
+    <widget class="QTextBrowser" name="AyudaTexto">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>421</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Manual rápido de uso&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. Inicie sesión con sus credenciales. El menú se adapta automáticamente al rol (Administrador, Paramétrico o Esporádico).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:10px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Administrador: acceso total, crea usuarios y revisa la bitácora.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:10px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Paramétrico: administra entidades y genera reportes.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:10px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Esporádico: consulta información sin modificar datos.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2. En la pestaña &lt;span style=&quot; font-weight:600;&quot;&gt;Entidades&lt;/span&gt; registre y actualice clientes, productos y categorías.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. Use &lt;span style=&quot; font-weight:600;&quot;&gt;Transacciones&lt;/span&gt; para registrar ventas. Las ventas a crédito calculan automáticamente cuota inicial del 30 %, saldo al 70 % con 5 % de interés y plan de cuotas (12, 18 o 24 meses).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4. Los &lt;span style=&quot; font-weight:600;&quot;&gt;Reportes&lt;/span&gt; incluyen ventas mensuales, clientes morosos, inventario por categoría, ventas por periodo, top de clientes e IVA trimestral para la DIAN.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5. Revise &lt;span style=&quot; font-weight:600;&quot;&gt;Consultas&lt;/span&gt; para información puntual: ventas por cliente, stock crítico, créditos activos, cuotas vencidas y ventas por usuario.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6. En &lt;span style=&quot; font-weight:600;&quot;&gt;Utilidades&lt;/span&gt; encontrará calculadora, calendario, bitácora de accesos y administración de usuarios.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:4px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7. Para soporte adicional escriba a &lt;a href=&quot;mailto:soporte@ventas-electro.com&quot;&gt;soporte@ventas-electro.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
     </widget>
    </widget>
   </widget>

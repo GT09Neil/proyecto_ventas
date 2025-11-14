@@ -1,8 +1,12 @@
-from PySide6.QtWidgets import QFrame
+from PySide6.QtWidgets import QFrame, QMessageBox
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtCore import QFile, QRect
 from Controllers.VentanaPrincipalController import VentanaPrincipalController
+
+from dao.usuario_dao import UsuarioDAO
+from dao.bitacora_dao import BitacoraDAO
+
 
 class LoginController(QFrame):
     def __init__(self):
@@ -29,13 +33,32 @@ class LoginController(QFrame):
         # Mostrar la ventana
         self.show()
 
-
     def iniciar_sesion(self):
-        # Aquí iría la lógica de autenticación (verificación de usuario y contraseña)
-        # Por simplicidad, asumimos que la autenticación es exitosa
+        cedula = self.ui.CedulaTXT.text().strip()
+        contrasena = self.ui.ContrasenaTXT.text()
+
+        if not cedula or not contrasena:
+            QMessageBox.warning(self, "Credenciales inválidas", "Ingrese cédula y contraseña.")
+            return
+
+        try:
+            usuario = UsuarioDAO.autenticar(cedula, contrasena)
+        except Exception as error:
+            QMessageBox.critical(self, "Error", f"Error al conectar con la base de datos:\n{error}")
+            return
+
+        if not usuario:
+            QMessageBox.critical(self, "Acceso denegado", "Cédula o contraseña incorrectas, o usuario inactivo.")
+            return
+
+        try:
+            UsuarioDAO.actualizar_ultimo_acceso(usuario.id_usuario)
+            BitacoraDAO.registrar(usuario.id_usuario, "Login", "Ingreso al sistema")
+        except Exception as error:
+            QMessageBox.warning(self, "Advertencia", f"No se pudo actualizar la bitácora:\n{error}")
 
         # Si la autenticación es exitosa, abrir la ventana principal
-        self.ventana_principal = VentanaPrincipalController()
+        self.ventana_principal = VentanaPrincipalController(usuario)
         self.ventana_principal.show()
 
         # Cerrar la ventana de inicio de sesión
